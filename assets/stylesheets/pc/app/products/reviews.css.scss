@@ -135,6 +135,10 @@ body.products.reviews, #review-edit-form {
     display: none;
   }
 
+  .product_reviews_grid .widget-reviews.no-data {
+    display: block;
+  }
+
   .select2-container#s2id_review_score {
     border: 1px solid #dadada;
     font-size: 14px;

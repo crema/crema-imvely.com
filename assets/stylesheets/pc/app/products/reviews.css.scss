@@ -13,6 +13,14 @@ body.products.reviews, #review-edit-form {
     }
   }
 
+  .widget-heading {
+    border-bottom: 0;
+
+    .sort-type {
+      color: black;
+    }
+  }
+
   ul.header {
     line-height: 32px;
     border-top: 3px solid #414141;
@@ -555,10 +563,15 @@ ul.reviews.reviews-product {
 }
 
 .widget-heading .sort_type_box {
-  float: left;
+  float: right;
 }
 .widget-heading .review-options-search {
-  width: 50%;
-  float: right;
+  width: 26%;
+  float: left;
+
+  .review_option_types {
+    left: 0;
+    margin-left: -30px;
+  }
 }
 

@@ -28,6 +28,7 @@
   <ul class="reviews reviews-product">
     <%= render partial: 'products/reviews/custom/review', collection: product_reviews, as: :review %>
   </ul>
+  <div class="no-data-message">리뷰가 없습니다.</div>
   <div class="widget-footer">
     <%= paginate product_reviews, params: {review_id: nil}, remote: true, window: kaminari_window(params[:page].to_i, product_reviews.total_pages) %>
   </div>

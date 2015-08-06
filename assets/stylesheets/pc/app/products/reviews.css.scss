@@ -140,7 +140,12 @@ body.products.reviews, #review-edit-form {
   }
 
   .widget-reviews.no-data {
-    display: none;
+    .no-data-message {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 30px 0 30px 0;
+    }
   }
 
   .product_reviews_grid .widget-reviews.no-data {

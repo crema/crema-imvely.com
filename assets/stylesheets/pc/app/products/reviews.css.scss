@@ -571,7 +571,12 @@ ul.reviews.reviews-product {
 
   .review_option_types {
     left: 0;
-    margin-left: -30px;
+    margin-left: -25px;
+
+    .dialog-iframe-height {
+      left: 0 !important;
+      min-width: 128px;
+    }
   }
 }
 

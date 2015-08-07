@@ -13,6 +13,14 @@ body.products.reviews, #review-edit-form {
     }
   }
 
+  .widget-heading {
+    border-bottom: 0;
+
+    .sort-type {
+      color: black;
+    }
+  }
+
   ul.header {
     line-height: 32px;
     border-top: 3px solid #414141;
@@ -132,7 +140,12 @@ body.products.reviews, #review-edit-form {
   }
 
   .widget-reviews.no-data {
-    display: none;
+    .no-data-message {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 30px 0 30px 0;
+    }
   }
 
   .product_reviews_grid .widget-reviews.no-data {
@@ -555,10 +568,20 @@ ul.reviews.reviews-product {
 }
 
 .widget-heading .sort_type_box {
-  float: left;
+  float: right;
 }
 .widget-heading .review-options-search {
-  width: 50%;
-  float: right;
+  width: 26%;
+  float: left;
+
+  .review_option_types {
+    left: 0;
+    margin-left: -25px;
+
+    .dialog-iframe-height {
+      left: 0 !important;
+      min-width: 128px;
+    }
+  }
 }
 

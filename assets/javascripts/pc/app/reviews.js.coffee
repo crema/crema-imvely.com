@@ -2,7 +2,7 @@ class Reviews
   collapse = ($review_content, complete) ->
     $collapsed = $review_content.find(".review-content-collapsed").css(opacity: 0)
     $expanded = $review_content.find(".review-content-expanded").css(opacity: 1)
-    $review_content.height($expanded.outerHeight() + 28)
+    $review_content.height($expanded.outerHeight())
     setTimeout (->
       $review_content.addClass("expanding")
       if $collapsed.length > 0
@@ -57,7 +57,7 @@ class Reviews
             setTimeout (->
               $review_content.addClass("expanded expanding")
               lib.animation.css $review_content, {
-                to_css: {height: $expanded.outerHeight() + 28},
+                to_css: {height: $expanded.outerHeight()},
                 complete: ->
                   lib.animation.fade_out $collapsed, duration: "short"
                   app.form.enable_validate()

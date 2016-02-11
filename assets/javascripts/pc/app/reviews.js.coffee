@@ -286,6 +286,16 @@ $(document).on "change", "select#sort_type", ->
   url_builder.add_param("order", order) if order
   $.getScript(url_builder.build())
 
+$(document).on "click", ".comments-link-expand", ->
+  if $(this).hasClass("selected")
+    $(this).removeClass("selected")
+    $(this).html "댓글 보기"
+    $(this).closest(".actions-container").siblings(".comments-container").slideUp()
+  else
+    $(this).addClass("selected")
+    $(this).html "댓글 접기"
+    $(this).closest(".actions-container").siblings(".comments-container").slideDown()
+
 $(document).on "click", ".comments-link-collapse", ->
   if $(this).hasClass("selected")
     $(this).removeClass("selected")

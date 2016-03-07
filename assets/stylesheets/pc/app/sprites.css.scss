@@ -32,6 +32,22 @@ $sprites-sprite-dimensions: true;
   @include sprites-sprite(fa-comment);
 }
 
-.no-comment .fa-comment {
+.fa-heart {
+  @include sprites-sprite(fa-heart);
+}
+
+.fa-heart-liked {
+  @include sprites-sprite(fa-heart-liked);
+}
+
+.no-comment .fa-comment, .fa-no-comment {
   @include sprites-sprite(fa-no-comment);
+}
+
+.tokenized_input__remove_button_icon {
+  @include sprites-sprite(tokenized-input-remove);
+}
+
+.products_index_gallery .sprites-icon-drop-down {
+  @include sprites-sprite(product-gallery-drop-down);
 }

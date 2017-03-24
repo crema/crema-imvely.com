@@ -289,7 +289,7 @@ $(document).on "change", "select#sort", ->
 $(document).on "click", ".comments-link-expand", ->
   if $(this).hasClass("selected")
     $(this).removeClass("selected")
-    $(this).html "댓글 보기s"
+    $(this).html "댓글 보기"
     $(this).closest(".actions-container").siblings(".comments-container").slideUp()
   else
     $(this).addClass("selected")
@@ -299,7 +299,7 @@ $(document).on "click", ".comments-link-expand", ->
 $(document).on "click", ".comments-link-collapse", ->
   if $(this).hasClass("selected")
     $(this).removeClass("selected")
-    $(this).html "댓글 보기s"
+    $(this).html "댓글 보기"
     $(this).closest(".actions-container").siblings(".comments-wrap").slideUp()
   else
     $(this).addClass("selected")
